@@ -1,4 +1,8 @@
 FROM centos:centos7
 
+# Perform updates
+RUN yum -y update; yum clean all
+
+# install packages
 RUN yum -y install gd gd-devel mpich mpich-devel mpich-autoload
-RUN rm -rf /var/cache/yum/*
+RUN yum clean all
