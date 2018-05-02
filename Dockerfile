@@ -1,6 +1,3 @@
 FROM nvidia/cuda:9.1-runtime-centos7
 
-RUN sudo apt-get update
-RUN sudo apt-get -y --force-yes install openmpi libgd libgd-devel
-RUN apt-get clean
-
+RUN  yum -y install gd gd-devel mpich mpich-dev mpich-autoload
