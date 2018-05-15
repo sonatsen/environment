@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM centos:centos7.4.1708
 
 # Perform updates
 RUN yum -y update; yum clean all
